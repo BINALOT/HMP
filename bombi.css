@@ -57,23 +57,23 @@ nav ul li:hover::after{
 
 }
 
-main {
+  main {
     padding: 20px;
     align-items: center;
-    padding-left: 15%
-    padding-top: 10%
+    padding-left: 15%;
+    padding-top: 10%;
 }
 
 h1{
     font-size: 70px;
     margin-top: auto;
-    color: white
+    color: black;
 }
 p{
     margin: 20px auto;
     font-weight: 150;
     line-height: 25px;
-    color: white
+    color: black;
 }
 button{
     width: 200px;
