@@ -13,13 +13,13 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-family: Arial, sans-serif;
 }
 
 header {
-    background-color: green; /* Example color */
+    background-color: green;
     color: white;
     padding: 20px;
+    width: 100%
 }
 .logo{
     width: 150px;
@@ -44,11 +44,9 @@ nav ul li a {
 
 main {
     padding: 20px;
+     align-items: center;
 }
 
-section {
-    margin-bottom: 20px;
-}
 h1{
     font-size: 70px;
     margin-top: auto;
@@ -56,9 +54,10 @@ h1{
 }
 p{
     margin: 20px auto;
-    font-weight: 100;
+    font-weight: 150;
     line-height: 25px;
     color: white
+    font-size: 15%
 }
 button{
     width: 200px;
@@ -90,11 +89,4 @@ button:hover span{
 }
 button:hover{
     border: none;
-}
-
-footer {
-    background-color: black; /* Example color */
-    color: white;
-    text-align: center;
-    padding: 10px;
 }
