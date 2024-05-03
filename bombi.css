@@ -26,17 +26,17 @@ header {
     cursor: pointer;
     margin-left: 10px;
 }
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
+nav{
+    flex: 1;
+    text-align: left;
 }
-
-nav ul li {
+nav ul li{
+    list-style: none;
     display: inline;
-    margin-right: 20px;
+    margin-left: 60px;
+    position: relative;
+    filter: drop-shadow(5px 5px 10px rgba(0,0,0, 0.5));
 }
-
 nav ul li a{
     text-decoration: none;
     color: white;
@@ -60,20 +60,19 @@ nav ul li:hover::after{
   main {
     padding: 20px;
     align-items: center;
-    padding-left: 15%;
     padding-top: 10%;
 }
 
 h1{
     font-size: 70px;
     margin-top: auto;
-    color: black;
+    color: white;
 }
 p{
     margin: 20px auto;
     font-weight: 150;
     line-height: 25px;
-    color: black;
+    color: white;
 }
 button{
     width: 200px;
