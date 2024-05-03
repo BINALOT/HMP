@@ -67,6 +67,8 @@ h1{
     font-size: 70px;
     margin-top: auto;
     color: white;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: white;
 }
 p{
     margin: 20px auto;
