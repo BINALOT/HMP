@@ -65,6 +65,7 @@ nav ul li:hover::after{
     padding: 20px;
     align-items: center;
     padding-top: 10%;
+     padding-left: 18%
 }
 
 h1{
