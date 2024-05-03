@@ -63,7 +63,7 @@ nav ul li:hover::after{
 }
 
 h1{
-    font-size: 60px;
+    font-size: 55px;
     margin-top: auto;
     color: black;
       -webkit-text-stroke-width: 4px;
@@ -71,7 +71,7 @@ h1{
 
 }
 p{
-    margin: 20px auto;
+    margin: auto;
     font-weight: 150;
     line-height: 25px;
     color: white;
