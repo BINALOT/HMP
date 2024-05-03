@@ -21,6 +21,11 @@ header {
     color: white;
     padding: 20px;
 }
+.logo{
+    width: 150px;
+    cursor: pointer;
+    margin-left: 10px;
+}
 
 nav ul {
     list-style-type: none;
