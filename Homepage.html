@@ -1,36 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="bombi.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Hompage</title>
 </head>
 <body>
-          <div class="navbar">
-        <a href="https://binalot.github.io/HMP/Homepage.html">
-        <img src="logo11.jpg" class="logo">
-        <nav>
-          <ul><b>
-            <li><a href="https://binalot.github.io/HMP/Homepage.html"><i class="fas fa-house"></i>Home</a></li>
-            <li><a href="https://binalot.github.io/menu/"><i class="fas fa-utensils"></i>Menu</a></li>
-            <li><a href="https://binalot.github.io/Aboutus/AboutUs.html"><i class="fas fa-store"></i>About Us</a></li>
-            <li><a href="https://binalot.github.io/contacts/"><i class="fas fa-phone"></i>Contacts</a></li>
-              <li><a href="https://binalot.github.io/faq/"></i>FAQ?</a></li>
+    <header>
+        <div class="navbar">
+            <div class="logo"><img src="logo2.jpg" class="logo"></div>
+            <ul class="links">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACTS</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
             
-            
-          </ul></b>
-        </nav>
-        
-      </div>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="#">HOME</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACTS</a></li>
+                <li><a href="#">FAQ</a></li>
+                
+        </div>
+    </header>
 
     <main>
-           <h1>SATISFY YOUR CRAVINGS</h1>
-    <p>Savor the irresistible delights at Binalot sa Tondo, where each dish is a flavorful masterpiece waiting to be discovered. 
-        <br>Join us for a culinary escapade that celebrates the vibrant essence of Filipino cuisine with every mouthwatering bite.</br></p>
-        <a href="https://binalot.github.io/BestSellerB/"><button  type="button"><span></span>Best Seller</button></a>
+        <section id="hero">
+            <h1>Satisfy Your Cravings!</h1>
+            <p>
+                Savor the irresistible delights at Binalot sa Tondo, <br />where each dish is a flavorful masterpiece waiting to be discovered.<br />
+Join us for a culinary escapade that celebrates the vibrant essence of Filipino cuisine with every mouthwatering bite.
+            </p>
+            <a href="https://binalot.github.io/BestSellerB/"><button  type="button"><span></span>Best Seller</button></a>
+        </section>
     </main>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+            
+        }
+    </script>
 </body>
 </html>
